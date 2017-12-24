@@ -2,13 +2,12 @@
 #include<conio.h>
 void main()
 {
-   int i, j, k;
-   char str[100];
-   char rev[100];
-   printf("Enter a string\t");
-   scanf("%s", str);
-   printf("The original string is %s\n", str);
-   for(i = 0; str[i] != '\0'; i++);
+   int  a[150];
+   int rev[100];
+   printf("Enter a number\t");
+   scanf("%d", &a);
+   printf("The original number is %d\n", a);
+   for(i = 0; a[i] != '\0'; i++);
    {
       k = i-1;
    }
@@ -17,6 +16,6 @@ void main()
       rev[j] = str[k];
       k--;
    }
-   printf("The reverse string is %s\n", rev);
+   printf("The reverse number is %d\n", a);
 	getch();
 }
